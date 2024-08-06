@@ -17,7 +17,10 @@ const Slider = () => {
     );
   };
   useEffect(() => {
-    nextCard();
+    if(byDateDesc){
+      nextCard();
+    }
+   
   });
   return (
     <div className="SlideCardList">
@@ -46,6 +49,7 @@ const Slider = () => {
                   type="radio"
                   name="radio-button"
                   checked={index === radioIdx}
+                  readOnly
                 />
               ))}
             </div>
