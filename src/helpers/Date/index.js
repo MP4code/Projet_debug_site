@@ -12,6 +12,5 @@ export const MONTHS = {
   11: "novembre",
   12: "décembre",
 };
- console.log(new Date("2024-01-01").getMonth());
 
 export const getMonth = (date) => MONTHS[date.getMonth()+1];
